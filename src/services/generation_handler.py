@@ -757,7 +757,7 @@ class GenerationHandler:
             "id": f"chatcmpl-{int(time.time())}",
             "object": "chat.completion.chunk",
             "created": int(time.time()),
-            "model": "flow2api",
+            "model": "workshop",
             "choices": [{
                 "index": 0,
                 "delta": {},
@@ -803,7 +803,7 @@ class GenerationHandler:
             "id": f"chatcmpl-{int(time.time())}",
             "object": "chat.completion",
             "created": int(time.time()),
-            "model": "flow2api",
+            "model": "workshop",
             "choices": [{
                 "index": 0,
                 "message": {

@@ -36,7 +36,7 @@ async def list_models(api_key: str = Depends(verify_api_key_header)):
         models.append({
             "id": model_id,
             "object": "model",
-            "owned_by": "flow2api",
+            "owned_by": "workshop",
             "description": description
         })
 

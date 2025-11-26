@@ -1,11 +1,11 @@
-"""Data models for Flow2API"""
+"""Data models for Workshop"""
 from pydantic import BaseModel
 from typing import Optional, List, Union, Any
 from datetime import datetime
 
 
 class Token(BaseModel):
-    """Token model for Flow2API"""
+    """Token model for Workshop"""
     id: Optional[int] = None
 
     # 认证信息 (核心)
@@ -154,6 +154,6 @@ class ChatCompletionRequest(BaseModel):
     stream: bool = False
     temperature: Optional[float] = None
     max_tokens: Optional[int] = None
-    # Flow2API specific parameters
+    # Workshop specific parameters
     image: Optional[str] = None  # Base64 encoded image (deprecated, use messages)
     video: Optional[str] = None  # Base64 encoded video (deprecated)

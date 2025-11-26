@@ -1,4 +1,4 @@
-"""Load balancing module for Flow2API"""
+"""Load balancing module for Workshop"""
 import random
 from typing import Optional
 from ..core.models import Token

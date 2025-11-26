@@ -1,9 +1,9 @@
 version: '3.8'
 
 services:
-  flow2api:
-    image: thesmallhancat/flow2api:latest
-    container_name: flow2api
+  workshop:
+    image: thesmallhancat/workshop:latest
+    container_name: workshop
     ports:
       - "8000:8000"
     volumes:

@@ -1,4 +1,4 @@
-"""Configuration management for Flow2API"""
+"""Configuration management for Workshop"""
 import tomli
 from pathlib import Path
 from typing import Dict, Any, Optional
@@ -41,7 +41,7 @@ class Config:
         """Set admin username from database"""
         self._admin_username = username
 
-    # Flow2API specific properties
+    # Workshop specific properties
     @property
     def flow_labs_base_url(self) -> str:
         """Google Labs base URL for project management"""

@@ -1,4 +1,4 @@
-# Flow2API
+# Workshop
 
 <div align="center">
 
@@ -35,8 +35,8 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/TheSmallHanCat/flow2api.git
-cd sora2api
+git clone https://github.com/TheSmallHanCat/workshop.git
+cd workshop
 
 # 启动服务
 docker-compose up -d
@@ -49,18 +49,18 @@ docker-compose logs -f
 
 ```bash
 # 使用 WARP 代理启动
-docker-compose -f docker-compose.warp.yml up -d
+docker-compose -f docker-compose.proxy.yml up -d
 
 # 查看日志
-docker-compose -f docker-compose.warp.yml logs -f
+docker-compose -f docker-compose.proxy.yml logs -f
 ```
 
 ### 方式二：本地部署
 
 ```bash
 # 克隆项目
-git clone https://github.com/TheSmallHanCat/flow2api.git
-cd sora2api
+git clone https://github.com/TheSmallHanCat/workshop.git
+cd workshop
 
 # 创建虚拟环境
 python -m venv venv
@@ -252,8 +252,8 @@ curl -X POST "http://localhost:8000/v1/chat/completions" \
 
 ## 📞 联系方式
 
-- 提交 Issue：[GitHub Issues](https://github.com/TheSmallHanCat/flow2api/issues)
-- 讨论：[GitHub Discussions](https://github.com/TheSmallHanCat/flow2api/discussions)
+- 提交 Issue：[GitHub Issues](https://github.com/TheSmallHanCat/workshop/issues)
+- 讨论：[GitHub Discussions](https://github.com/TheSmallHanCat/workshop/discussions)
 
 ---
 

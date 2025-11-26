@@ -1,4 +1,4 @@
-"""Database storage layer for Flow2API"""
+"""Database storage layer for Workshop"""
 import aiosqlite
 import json
 from datetime import datetime
@@ -241,7 +241,7 @@ class Database:
     async def init_db(self):
         """Initialize database tables"""
         async with aiosqlite.connect(self.db_path) as db:
-            # Tokens table (Flow2API版本)
+            # Tokens table (Workshop版本)
             await db.execute("""
                 CREATE TABLE IF NOT EXISTS tokens (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
